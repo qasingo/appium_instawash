@@ -1,16 +1,13 @@
 from appium import webdriver
 from appium.webdriver.common.appiumby import By
-# from selenium.webdriver.common.by import By
 from appium.options.android import UiAutomator2Options
 import time
 
 # 테스트 빌드 경로
-instawashTestApp = r'C:/Workspace/2024/instawash_20240511/apk/Instawash-5.65.5.apk'
+instawashTestApp = r'C:/Workspace/2024/appium_instawash/apk/Instawash-5.65.5.apk'
 # 테스트 디바이스 정보
-# deviceName
-device_s9 = '228818e4410b7ece'
-# avd Name
-avdevice_px3 = 'Pixel_3_API_31'
+device_s9 = '228818e4410b7ece'       # deviceName
+avdevice_px3 = 'Pixel_3_API_31' # avdName
 # 디바이스 환경 및 디바이스 대상 지정하여 실행
 def config_omniNotes_wd(app_package, app_activity):
   # option 설정

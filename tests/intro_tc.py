@@ -4,19 +4,20 @@ from config.webDriver import config_omniNotes_wd
 from config.webDriver import get_elementXpath, get_elementId
 from utills.interaction_utils import window_swipe_left, window_swipe_right
 # webDriver 실행
-# testcase 앱 시작 위치에 따라 app_package 값과 app_activity 값을 전달해서 실행한다
+# TC 앱 시작 위치에 따라 app_package 값과 app_activity 값을 전달해서 실행한다
 def intro_wd():
     app_package = None
     app_activity = None
     wd = config_omniNotes_wd(app_package, app_activity)
     return wd
-# 해당 테스트 파일 스크린샷 저장할 경로
-screenshot_path = r'C:/Workspace/2024/omninote_20240511/testResult/'
+# 해당 TC 테스트 파일 스크린샷 저장할 경로
+screenshot_path = r'C:/Workspace/2024/appium_instawash/testResult/'
 def scr(wd, scrName):
     # 파일 이름만 붙여 저장하도록 함
     scr = config.webDriver.screenshot(wd, screenshot_path + scrName)
     return  scr
 # 권한 설정 패스 임시 코드
+# 위치 추적 허용은 1회 허용 이후 나타나지 않는데 해당 코드는 1회 허용 이후라고 가정한다.
 def temp(wd):
     print('>> temp')
 # 서비스 권한 알림 확인 버튼 클릭
@@ -25,7 +26,7 @@ def temp(wd):
     btnConfirm_ele = get_elementId(wd,  btnConfirm_id)
     btnConfirm_ele.click()
     time.sleep(2)
-    # 위치 추적 허용은 1회 허용 이후 나타나지 않는데 해당 코드는 1회 허용 이후라고 가정한다.
+
 # 국가(Kor) 변경 Testcase
 def select_country_kor(wd):
     try:
@@ -37,7 +38,7 @@ def select_country_kor(wd):
         btnKor_ele = get_elementXpath(wd, btnKor_xpath)
         btnKor_ele.click()
     except:
-        print("국가(Kor) 변경 testcase 실패")
+        print("국가(Kr) 변경 testcase 실패")
     finally:
         time.sleep(2)
 # 국가(Jap) 변경 Testcase
@@ -46,12 +47,14 @@ def select_country_jp(wd):
         btnCountry_id = 'com.claf.InstaWash:id/btnCountry'
         btnCountry_ele = get_elementId(wd, btnCountry_id)
         btnCountry_ele.click()
-
+        time.sleep(2)
         btnJp_xpath = '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]'
         btnJp_ele = get_elementXpath(wd, btnKor_xpath)
         btnJp_ele.click()
     except:
         print("국가(Jp) 변경 testcase 실패")
+    finally:
+        time.sleep(2)
 
  # 국가(Kor) 확인
 def check_country_kor(wd):
