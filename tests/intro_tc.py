@@ -2,7 +2,7 @@ import time
 import config.webDriver
 from config.webDriver import instawash_wd
 from config.webDriver import get_elementXpath, get_elementId
-from utills.interaction_utils import window_swipe_left, window_swipe_right
+from utils.interaction_utils import window_swipe_left, window_swipe_right
 # webDriver 실행
 # TC 앱 시작 위치에 따라 app_package 값과 app_activity 값을 전달해서 실행한다
 def intro_wd():
