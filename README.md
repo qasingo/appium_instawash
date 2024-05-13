@@ -1,6 +1,7 @@
 # appium_instawash
 instawash appium test automation
-# 
+## 2
+### 3
 # main.py
 이 파일은 테스트 케이스를 실행하는 엔트리 포인트입니다. 테스트를 실행할 테스트 케이스의 wd 와 test_ 함수를 호출하여 사용합니다.
 원하는 테스트만 실행할 수 있습니다.
