@@ -9,7 +9,7 @@ instawashTestApp = r'C:/Workspace/2024/appium_instawash/apk/Instawash-5.65.5.apk
 device_s9 = '228818e4410b7ece'       # deviceName
 avdevice_px3 = 'Pixel_3_API_31' # avdName
 # 디바이스 환경 및 디바이스 대상 지정하여 실행
-def config_omniNotes_wd(app_package, app_activity):
+def instawash_wd(app_package, app_activity):
   # option 설정
   options = UiAutomator2Options()
   options.app = instawashTestApp
@@ -33,11 +33,6 @@ def config_omniNotes_wd(app_package, app_activity):
   print("테스트 대상 실행 완료")
   time.sleep(10)
   return wd
-# 테스트 웹 드라이버 호출
-# app_package = None
-# app_activity = None
-# wd = config_omniNotes_wd(app_package, app_activity)
-# id 를 통해 element 를 찾아 반환
 def get_elementId(wd, id):
   element = wd.find_element(By.ID,id)
   return element
