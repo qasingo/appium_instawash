@@ -1,5 +1,7 @@
-# appium_instawash
+appium_instawash
+#![instawash_introTest_full](https://github.com/qasingo/appium_instawash/assets/160413136/b466d058-a01d-487e-b96e-a4c72a4b775f)
 instawash appium test automation
+
 ## main.py
 이 파일은 테스트 케이스를 실행하는 엔트리 포인트입니다. 테스트를 실행할 테스트 케이스의 wd 와 runTest_ 함수를 호출하여 사용합니다.
 원하는 테스트만 실행할 수 있습니다.
