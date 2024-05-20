@@ -7,7 +7,7 @@ instawash appium test automation
 원하는 테스트만 실행할 수 있습니다.
 
 ## tests/intro_tc.py
-이 파일에는 인트로 테스트 케이스 및 관련 기능이 정의되어 있습니다. intro(kr) 화면에서 로그인 진입까지 테스트를 진행하고 테스트 중 촬영한 스크린샷, Testcase와 결과를 testResult 폴더에 생성합니다.
+이 파일에는 인트로 테스트 케이스 및 관련 기능이 정의되어 있습니다. intro(kr) 화면에서 로그인 진입까지 테스트를 진행하고 테스트 중 촬영한 스크린샷, Testcase 결과를 testResult 폴더에 생성합니다.
 ![image](https://github.com/qasingo/appium_instawash/assets/160413136/095d4238-4d63-4863-b105-fed98c1cc2ec)
 ![image](https://github.com/qasingo/appium_instawash/assets/160413136/f9254c94-0505-4e57-a001-aefa6ae0bf81)
 [introTest_0517(0828).xlsx](https://github.com/qasingo/appium_instawash/files/15373159/introTest_0517.0828.xlsx)
