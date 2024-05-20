@@ -1,5 +1,5 @@
 appium_instawash
-#![instawash_introTest_full](https://github.com/qasingo/appium_instawash/assets/160413136/b466d058-a01d-487e-b96e-a4c72a4b775f)
+![instawash_introTest_log_0517](https://github.com/qasingo/appium_instawash/assets/160413136/1c17b545-f38c-4b01-af40-f1a5423f6973)
 instawash appium test automation
 
 ## main.py
